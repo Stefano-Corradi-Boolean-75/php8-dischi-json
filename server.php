@@ -5,8 +5,8 @@ $disc_list = json_decode($string, true);
 $result = [];
 
 
-//discIndex
-if(empty($_GET['discIndex'])){
+
+if(!isset($_GET['discIndex'])){
     // non invio la richiesta del dettaglio quindi stampo tutti i dischi
     $result = $disc_list;
 }else{
